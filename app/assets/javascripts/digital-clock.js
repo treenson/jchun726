@@ -53,7 +53,7 @@ $(function(){
 		// d is for day of week and A is for AM/PM
 
 		var time_int = (new Date()).getTime();
-		var time_diff = Math.floor((1406275200000-time_int)/1000);
+		var time_diff = Math.floor((1414162800000-time_int)/1000);
 		var now = ("00"+parseInt(time_diff/3600)).slice(-3) + ("0"+parseInt((time_diff%3600)/60)).slice(-2) + ("0"+parseInt(time_diff%60)).slice(-2);
 
 		digits.h0.attr('class', digit_to_name[now[0]]);
